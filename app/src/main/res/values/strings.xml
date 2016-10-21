@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WeatherShow</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="condicao">Condição</string>
+    <string name="local">Local</string>
+    <string name="button_weather_change">ºF</string>
+    <string name="button_refresh">Refresh</string>
+    <string-array name="capitais_array" >
+        <item>Aracaju, SE</item>
+        <item>Belém, PA</item>
+        <item>Belo Horizonte, MG</item>
+        <item>Boa Vista, RR</item>
+        <item>Brasília, DF</item>
+        <item>Campo Grande, MS</item>
+        <item>Cuiabá, MT</item>
+        <item>Curitiba, PR</item>
+        <item>Florianópolis, SC</item>
+        <item>Fortaleza, CE</item>
+        <item>Goiânia, GO</item>
+        <item>João Pessoa, PB</item>
+        <item>Macapá, AP</item>
+        <item>Maceió, AL</item>
+        <item>Manaus, AM</item>
+        <item>Natal, RN</item>
+        <item>Palmas, TO</item>
+        <item>Porto Alegre, RS</item>
+        <item>Porto Velho, RO</item>
+        <item>Recife, PE</item>
+        <item>Rio Branco, AC</item>
+        <item>Rio de Janeiro, RJ</item>
+        <item>São Luís, MA</item>
+        <item>São Paulo, SP</item>
+        <item>Salvador, BA</item>
+        <item>Teresina, PI</item>
+        <item>Vitória, ES</item>
+    </string-array>
+</resources>

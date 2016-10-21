@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.danielsantana.weathershow.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherImageView"
+        android:src="@drawable/icon_na"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temperatura"
+        android:id="@+id/temperaturaTextView"
+        android:layout_below="@+id/weatherImageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/condicao"
+        android:id="@+id/condicaoTextView"
+        android:layout_below="@+id/temperaturaTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/local"
+        android:id="@+id/localTextView"
+        android:layout_below="@+id/condicaoTextView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yahooLogo"
+        android:src="@drawable/yahoo_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_weather_change"
+        android:id="@+id/weatherChangeButtonView"
+        android:layout_above="@+id/yahooLogo"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/AppTheme"
+        android:textStyle="bold"
+        android:onClick="changeDisplayTypeTemperature"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listCapitais"
+        android:entries="@array/capitais_array"
+        android:layout_above="@+id/yahooLogo"
+        android:layout_alignTop="@+id/weatherChangeButtonView"
+        android:layout_alignStart="@+id/weatherImageView"
+        android:layout_alignEnd="@+id/weatherImageView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_refresh"
+        android:id="@+id/refreshButton"
+        android:layout_above="@+id/weatherChangeButtonView"
+        android:layout_alignParentEnd="true"
+        android:onClick="refresh"/>
+
+</RelativeLayout>
+
+
